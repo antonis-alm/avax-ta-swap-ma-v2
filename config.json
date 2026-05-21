@@ -1,0 +1,32 @@
+{
+    "chain": "avalanche",
+    "protocol": "traderjoe_v2",
+    "base_token": "WAVAX",
+    "quote_token": "USDC",
+    "timeframe": "5m",
+    "ema_fast_period": 5,
+    "ema_slow_period": 10,
+    "ohlcv_limit": 60,
+    "trade_size_usd": 5,
+    "max_slippage_bps": 50,
+    "force_action": "",
+    "token_funding": [
+        {
+            "symbol": "WAVAX",
+            "address": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+            "amount": "10",
+            "amount_type": "usd"
+        },
+        {
+            "symbol": "USDC",
+            "address": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+            "amount": "10",
+            "amount_type": "usd"
+        }
+    ],
+    "anvil_funding": {
+        "AVAX": 100,
+        "WAVAX": 20,
+        "USDC": 10000
+    }
+}

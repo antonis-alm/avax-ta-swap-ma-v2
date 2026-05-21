@@ -1,0 +1,5 @@
+{
+    "display_name": "AVAX EMA Crossover Momentum",
+    "description": "TA dashboard for AVAX/USDC EMA crossover momentum swaps on Avalanche TraderJoe V2 (execution may route via WAVAX).",
+    "icon": "📈"
+}
