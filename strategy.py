@@ -147,6 +147,14 @@ class AVAXTASwapMAStrategy(IntentStrategy):
         curr_slow = ema_slow[-2]
 
         confirmed_ts = self._timestamp_to_str(timestamps[-2])
+        logger.info(
+            "EMA snapshot ts=%s fast(prev=%s curr=%s) slow(prev=%s curr=%s)",
+            confirmed_ts,
+            prev_fast,
+            curr_fast,
+            prev_slow,
+            curr_slow,
+        )
         if self.last_processed_candle_ts == confirmed_ts:
             return Intent.hold(reason="Waiting for next confirmed 5m candle close")
 
