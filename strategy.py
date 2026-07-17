@@ -262,7 +262,7 @@ class AVAXTASwapMAStrategy(IntentStrategy):
             )
 
         return TeardownPositionSummary(
-            strategy_id=getattr(self, "strategy_id", "a_v_a_x_t_a_swap_m_a"),
+            deployment_id=getattr(self, "deployment_id", "a_v_a_x_t_a_swap_m_a"),
             timestamp=datetime.now(UTC),
             positions=positions,
         )
